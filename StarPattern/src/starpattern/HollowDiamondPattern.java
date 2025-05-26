@@ -30,12 +30,7 @@ public class HollowDiamondPattern {
         {
             for(int col=1;col<=n*2 -1;col++)
             {
-                if(col == n - row || col == n + row)
-                {
-                    System.out.print("* ");
-                } else {
-                    System.out.print("  ");
-                }
+                System.out.print(col == n - row || col == n + row ? "* " : " ");
             }
             System.out.println();
         }
@@ -45,12 +40,7 @@ public class HollowDiamondPattern {
         {
             for(int col=1;col<=n*2 -1;col++)
             {
-                if(col == n - row || col == n + row)
-                {
-                    System.out.print("* ");
-                } else {
-                    System.out.print("  ");
-                }
+                System.out.print(col == n - row || col == n + row ? "* " : " ");
             }
             System.out.println();
         }

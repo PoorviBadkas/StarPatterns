@@ -27,12 +27,7 @@ public class HollowPyramidPattern {
         {
             for(int col=1;col<=n*2 -1;col++)
             {
-                if(col == n-row || col == n+row || row == n -1)
-                {
-                    System.out.print("* ");
-                } else {
-                    System.out.print("  ");
-                }
+                System.out.print(col == n-row || col == n+row || row == n -1 ? "* " : "  ");
             }
             System.out.println();
         }

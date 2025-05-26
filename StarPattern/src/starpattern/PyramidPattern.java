@@ -40,22 +40,31 @@ public class PyramidPattern {
         // my approach end
         
         int n =5;
-        for(int row =1;row<=n;row++)
-        {
-            // to skip space logic
-            for(int space=1;space <= n-row;space++)
-            {
-                System.out.print("  ");
-            }
+        
+//        
+//        for(int row =1;row<=n;row++)
+//        {
+//            // to skip space logic
+//            for(int space=1;space <= n-row;space++)
+//            {
+//                System.out.print("  ");
+//            }
+//            
+//            // to print number of start in a line after space
+//            for(int star=1;star<= 2 * row - 1; star ++)
+//            {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
             
-            // to print number of start in a line after space
-            for(int star=1;star<= 2 * row - 1; star ++)
-            {
-                System.out.print("* ");
-            }
-            System.out.println();
-        }
+        for (int row = 1; row <= n; row++) {
+            // print spaces (2 spaces per unit)
+            System.out.print("  ".repeat(n - row));
 
+            // print stars followed by a space
+            System.out.println("* ".repeat(2 * row - 1));
+        }
     }
     
 }

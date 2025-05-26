@@ -25,12 +25,7 @@ public class HollowSquarePattern {
         {
             for(int col=1;col<=n;col++)
             {
-                if((row == n || col ==5)  || (row ==1 || col ==1))
-                {
-                    System.out.print("*");
-                } else {
-                    System.out.print(" ");
-                }
+                System.out.print((row == n || col ==5)  || (row ==1 || col ==1) ? "* " : "  ");
             }
             System.out.println();
         }

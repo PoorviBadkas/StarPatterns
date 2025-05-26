@@ -21,17 +21,25 @@ public class RightAlignedTrianglePattern {
     
     public static void main(String[] args) {
         int n =5;
-        for(int row=1;row<=n;row++)
-        {
-            for(int space=1;space<= n-row;space++)
-            {
-                System.out.print("  ");
-            }
-            for(int j =1;j<=row;j++)
-            {
-                System.out.print("* ");
-            }
-            System.out.println();
+        
+        // my way starts
+//        for(int row=1;row<=n;row++)
+//        {
+//            for(int space=1;space<= n-row;space++)
+//            {
+//                System.out.print("  ");
+//            }
+//            for(int j =1;j<=row;j++)
+//            {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+//          my way end
+
+        for (int i = 1; i <= n; i++) {
+            System.out.print("  ".repeat(n - i)); // java 11+
+            System.out.println("* ".repeat(i));
         }
     }
     

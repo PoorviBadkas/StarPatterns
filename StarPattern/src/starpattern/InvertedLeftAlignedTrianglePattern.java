@@ -20,13 +20,19 @@ public class InvertedLeftAlignedTrianglePattern {
     
     public static void main(String[] args) {
         int n =5;
-        for(int row=5;row>=1;row--)
-        {
-            for(int j=1;j<=row;j++)
-            {
-                System.out.print("* ");
-            }
-            System.out.println();
+        // my way starts
+//        for(int row=n;row>=1;row--)
+//        {
+//            for(int j=1;j<=row;j++)
+//            {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+           // my way ends
+           
+        for (int row = n; row >= 1; row--) {
+            System.out.println("* ".repeat(row));
         }
     }
 }

@@ -20,13 +20,20 @@ public class LeftAlignedTrianglePattern {
     
     public static void main(String[] args) {
         int n =5;
+        // my way starts
+//        for(int row =1;row<=n;row++)
+//        {
+//            for(int j =1;j<=row;j++)
+//            {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+        // my way ends
+        
         for(int row =1;row<=n;row++)
         {
-            for(int j =1;j<=row;j++)
-            {
-                System.out.print("* ");
-            }
-            System.out.println();
+            System.out.println("* ".repeat(row)); // java 11 +
         }
     }
     

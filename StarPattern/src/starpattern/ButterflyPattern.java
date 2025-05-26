@@ -26,45 +26,63 @@ public class ButterflyPattern {
         
         int n = 5;
         // right aligned pyramid
+//        for(int row=1;row<=n;row++)
+//        {
+//            for(int star=1;star<=row;star++)
+//            {
+//                System.out.print("* ");
+//            }
+//            
+//            // space before new star pattern
+//            for(int space=1;space<=n*2-row*2;space++)
+//            {
+//                System.out.print("  ");
+//            }
+//            
+//            for(int star=1;star<=row;star++)
+//            {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+//        
+//        
+//        for(int row=n-1;row>=1;row--)
+//        {
+//            for(int star=1;star<=row;star++)
+//            {
+//                System.out.print("* ");
+//            }
+//            
+//            // space before new star pattern
+//            for(int space=1;space<=n*2-row*2;space++)
+//            {
+//                System.out.print("  ");
+//            }
+//            
+//            for(int star=1;star<=row;star++)
+//            {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+//    }
+//    
+    
         for(int row=1;row<=n;row++)
         {
-            for(int star=1;star<=row;star++)
-            {
-                System.out.print("* ");
-            }
-            
-            // space before new star pattern
-            for(int space=1;space<=n*2-row*2;space++)
-            {
-                System.out.print("  ");
-            }
-            
-            for(int star=1;star<=row;star++)
-            {
-                System.out.print("* ");
-            }
-            System.out.println();
+            System.out.print("* ".repeat(row));
+            System.out.print("  ".repeat(n*2-row*2));
+            System.out.println("* ".repeat(row));
         }
         
         
         for(int row=n-1;row>=1;row--)
         {
-            for(int star=1;star<=row;star++)
-            {
-                System.out.print("* ");
-            }
-            
-            // space before new star pattern
-            for(int space=1;space<=n*2-row*2;space++)
-            {
-                System.out.print("  ");
-            }
-            
-            for(int star=1;star<=row;star++)
-            {
-                System.out.print("* ");
-            }
-            System.out.println();
+             System.out.print("* ".repeat(row));
+            System.out.print("  ".repeat(n*2-row*2));
+            System.out.println("* ".repeat(row));
         }
     }
+    
 }
